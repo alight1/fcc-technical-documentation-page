@@ -7,3 +7,36 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+:root {
+  --nav-width: 300px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--nav-width);
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.main {
+  margin-left: calc(var(--nav-width) + 25px);
+}
+
+@media (max-width: 800px) {
+  :root {
+    --nav-width: 100%;
+  }
+
+  .navbar {
+    position: static;
+    margin-bottom: 25px;
+  }
+
+  .main {
+    margin-left: initial;
+  }
+}
