@@ -1,14 +1,21 @@
-<nav id="navbar" class="navbar">
-  <header><h1>Webpack Publish to AWS S3 Host</h1></header>
+<nav id="navbar" class="navbar" role="navigation" aria-labelledby="header">
+  <header id="header"><h1>Webpack Publish to AWS S3 Host</h1></header>
   <a href="#introduction" class="nav-link">Introduction</a>
   <a href="#section_2" class="nav-link">Section 2</a>
   <a href="#section_3" class="nav-link">Section 3</a>
   <a href="#section_4" class="nav-link">Section 4</a>
   <a href="#section_5" class="nav-link">Section 5</a>
 </nav>
-<main id="main-doc" class="main">
-  <section class="main-section" id="introduction">
-    <header><h2>Introduction</h2></header>
+<main id="main-doc" class="main" role="main">
+  <!-- Normally, I would use an ID only on the header within the section because it's required for aria-labelledby (and that's the only reason I'd apply an ID to an element).
+        In this case, freeCodeCamp requires linking specifically to the section ID to pass tests, so I applied IDs to both section and header.-->
+  <section
+    id="introduction"
+    class="main-section"
+    role="region"
+    aria-labelledby="section-header-introduction"
+  >
+    <header id="section-header-introduction"><h2>Introduction</h2></header>
     <p>
       What should this document? After all, there are plenty of low-cost
       documentation services online (<a
@@ -36,8 +43,13 @@
       CI/CD workflow. This is not that.
     </p>
   </section>
-  <section class="main-section" id="section_2">
-    <header><h2>Section 2</h2></header>
+  <section
+    id="section_2"
+    class="main-section"
+    role="region"
+    aria-labelledby="section-header-2"
+  >
+    <header id="section-header-2"><h2>Section 2</h2></header>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dui
       dolor, dapibus in pulvinar ac, commodo eu eros. Quisque sodales dolor
@@ -70,8 +82,13 @@ example2-line-2;
       porttitor diam a nibh imperdiet fermentum.
     </p>
   </section>
-  <section class="main-section" id="section_3">
-    <header><h2>Section 3</h2></header>
+  <section
+    id="section_3"
+    class="main-section"
+    role="region"
+    aria-labelledby="section-header-3"
+  >
+    <header id="section-header-3"><h2>Section 3</h2></header>
     <p>
       Maecenas molestie mauris vitae nisi feugiat, eget ullamcorper eros
       blandit. Pellentesque pharetra nibh eros, ut ornare nisi ullamcorper nec.
@@ -101,8 +118,13 @@ example2-line-2;
       Aenean aliquet urna vitae ante euismod laoreet.
     </p>
   </section>
-  <section class="main-section" id="section_4">
-    <header><h2>Section 4</h2></header>
+  <section
+    id="section_4"
+    class="main-section"
+    role="region"
+    aria-labelledby="section-header-4"
+  >
+    <header id="section-header-4"><h2>Section 4</h2></header>
     <p>
       Sed ac turpis ornare, dignissim magna at, ornare neque. Nullam id ex in
       risus volutpat elementum sit amet at nulla. Sed vel lobortis purus.
@@ -124,8 +146,13 @@ example2-line-2;
       <li>Duis vulputate neque quis feugiat tempus.</li>
     </ol>
   </section>
-  <section class="main-section" id="section_5">
-    <header><h2>Section 5</h2></header>
+  <section
+    id="section_5"
+    class="main-section"
+    role="region"
+    aria-labelledby="section-header-5"
+  >
+    <header id="section-header-5"><h2>Section 5</h2></header>
     <p>
       Duis imperdiet sodales dictum. Vestibulum elit tellus, scelerisque a
       tincidunt sed, finibus eu diam. Nullam non sollicitudin massa. Vivamus
