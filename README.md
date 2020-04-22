@@ -6,6 +6,6 @@ A simple responsive technical documentation page.
 
 ## Demonstrated concepts
 
-- Coming soon...
+- Accessibility, including semantic markup with [currently advisable WAI-ARIA roles and labeling](https://www.w3.org/WAI/tutorials/page-structure/regions/#accessupport)
 
 **See also:** [Common concepts, config, and documentation](https://github.com/alight1/template-webpack-with-s3-hosting#common)

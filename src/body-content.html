@@ -1,3 +1,184 @@
-<main>
-  ...
+<nav id="navbar" class="navbar" role="navigation" aria-labelledby="header">
+  <header id="header"><h1>Webpack Publish to AWS S3 Host</h1></header>
+  <a href="#introduction" class="nav-link">Introduction</a>
+  <a href="#section_2" class="nav-link">Section 2</a>
+  <a href="#section_3" class="nav-link">Section 3</a>
+  <a href="#section_4" class="nav-link">Section 4</a>
+  <a href="#section_5" class="nav-link">Section 5</a>
+</nav>
+<main id="main-doc" class="main" role="main">
+  <!-- Normally, I would use an ID only on the header within the section because it's required for aria-labelledby (and that's the only reason I'd apply an ID to an element).
+        In this case, freeCodeCamp requires linking specifically to the section ID to pass tests, so I applied IDs to both section and header.-->
+  <section
+    id="introduction"
+    class="main-section"
+    role="region"
+    aria-labelledby="section-header-introduction"
+  >
+    <header id="section-header-introduction"><h2>Introduction</h2></header>
+    <p>
+      What should this document? After all, there are plenty of low-cost
+      documentation services online (<a
+        href="https://www.atlassian.com/blog/add-ons/5-real-life-examples-beautiful-technical-documentation"
+        target="_blank"
+        >Atlassian makes it easy</a
+      >) and there are surely better ways to spend time coding.
+    </p>
+    <p>
+      This is a project to demonstrate my knowledge of responsive HTML and CSS
+      ;-). I plan to document how I use AWS S3 to host my static websites at a
+      very low cost (much lower than Webflow site plans) while having more
+      control than most free hosting services offer.
+    </p>
+    <p>
+      Of course, <a href="https://webflow.com/" target="_blank">Webflow</a> and
+      similar paid services offer far more value than simple website hosting, so
+      the costs are justified for many companies. For simple code portfolio
+      projects, AWS S3 + CloudFront + Certificate Manager provide an excellent
+      alternative for those who know how to code, while Webpack and open-source
+      plugins automate publishing.
+    </p>
+    <p>
+      <strong>Note:</strong> most teams of any size would benefit from a robust
+      CI/CD workflow. This is not that.
+    </p>
+  </section>
+  <section
+    id="section_2"
+    class="main-section"
+    role="region"
+    aria-labelledby="section-header-2"
+  >
+    <header id="section-header-2"><h2>Section 2</h2></header>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dui
+      dolor, dapibus in pulvinar ac, commodo eu eros. Quisque sodales dolor
+      semper nisl faucibus pellentesque. Proin urna lorem, laoreet a leo vel,
+      euismod malesuada enim. Nam non eros id metus fermentum bibendum. Etiam
+      tempor finibus ante a posuere. Proin bibendum mattis arcu nec malesuada.
+      Vestibulum ultricies, mauris ut molestie aliquam, turpis justo auctor sem,
+      id scelerisque ligula ex non nulla. Donec pretium nunc vestibulum lectus
+      consequat feugiat. Mauris maximus lectus sit amet rutrum venenatis.
+      Integer nec odio nec nisi consectetur auctor fringilla a sem. Vivamus
+      vehicula vitae nunc ac facilisis. Sed placerat imperdiet cursus.
+      Pellentesque enim lorem, congue vel efficitur eu, placerat ac odio. Morbi
+      tempor tincidunt lectus, quis feugiat dolor efficitur ac. Praesent ut
+      dictum diam.
+    </p>
+    <code>
+      example1;
+    </code>
+    <p>Explanation...</p>
+    <pre><code>
+example2-line-1;
+example2-line-2;
+    </code></pre>
+    <p>
+      Cras vel neque id felis accumsan rutrum. Nullam nec tortor a nulla iaculis
+      vehicula ac eget turpis. Suspendisse aliquam tincidunt porta. Phasellus
+      vitae libero sit amet elit laoreet pretium. Curabitur pellentesque ut nisl
+      sodales tempus. Morbi at mollis libero. Nam hendrerit eros magna, eget
+      tempor nulla interdum ac. Duis non vehicula dolor, a cursus urna. Donec
+      porttitor diam a nibh imperdiet fermentum.
+    </p>
+  </section>
+  <section
+    id="section_3"
+    class="main-section"
+    role="region"
+    aria-labelledby="section-header-3"
+  >
+    <header id="section-header-3"><h2>Section 3</h2></header>
+    <p>
+      Maecenas molestie mauris vitae nisi feugiat, eget ullamcorper eros
+      blandit. Pellentesque pharetra nibh eros, ut ornare nisi ullamcorper nec.
+      Suspendisse sem urna, dictum et orci sed, tempor tristique lorem.
+      Curabitur ultricies vulputate commodo. Cras malesuada dolor ac tellus
+      dignissim, a pretium massa vulputate. Etiam ipsum lacus, imperdiet at orci
+      sit amet, finibus convallis nunc. Vestibulum lacinia volutpat lacus non
+      finibus. Phasellus erat ex, eleifend non elit at, bibendum interdum erat.
+      Praesent libero lorem, posuere nec dolor vitae, rhoncus sodales tortor. Ut
+      sit amet leo maximus, dignissim nunc vel, pellentesque erat. Vivamus
+      gravida nisl neque, sed sodales nibh bibendum sodales. Nam fringilla
+      congue nisl at vulputate.
+    </p>
+    <ul>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      <li>Proin non est ornare, blandit magna nec, finibus mi.</li>
+    </ul>
+    <code>
+      example3;
+    </code>
+    <p>
+      Mauris dolor leo, rutrum sit amet felis vel, consectetur vestibulum orci.
+      Nunc non mollis velit, eget gravida neque. Integer elementum eros sapien.
+      Phasellus sem felis, dapibus at mi non, iaculis pellentesque turpis.
+      Aliquam ut interdum justo. Nullam pellentesque, tortor quis aliquam
+      luctus, ligula massa egestas metus, at consectetur libero orci sed turpis.
+      Aenean aliquet urna vitae ante euismod laoreet.
+    </p>
+  </section>
+  <section
+    id="section_4"
+    class="main-section"
+    role="region"
+    aria-labelledby="section-header-4"
+  >
+    <header id="section-header-4"><h2>Section 4</h2></header>
+    <p>
+      Sed ac turpis ornare, dignissim magna at, ornare neque. Nullam id ex in
+      risus volutpat elementum sit amet at nulla. Sed vel lobortis purus.
+      Curabitur elit lorem, consequat faucibus rutrum ut, tincidunt sed ligula.
+      Sed mattis tortor metus, sit amet condimentum justo auctor ut. Donec
+      dapibus lectus vel vestibulum vehicula. Pellentesque et sodales odio. In
+      vehicula lorem est, non lacinia felis fermentum sit amet. Mauris nulla
+      tellus, scelerisque quis laoreet at, sagittis eget sem. Nunc elementum
+      libero non lorem ullamcorper molestie. Suspendisse convallis laoreet
+      ligula non molestie. Mauris rutrum vel orci nec ultrices. Duis in congue
+      justo, non tempus felis. Integer vehicula vehicula iaculis. Nulla
+      facilisi.
+    </p>
+    <code>
+      example4;
+    </code>
+    <ol>
+      <li>Sed sed risus eget dui sollicitudin viverra sed at turpis.</li>
+      <li>Duis vulputate neque quis feugiat tempus.</li>
+    </ol>
+  </section>
+  <section
+    id="section_5"
+    class="main-section"
+    role="region"
+    aria-labelledby="section-header-5"
+  >
+    <header id="section-header-5"><h2>Section 5</h2></header>
+    <p>
+      Duis imperdiet sodales dictum. Vestibulum elit tellus, scelerisque a
+      tincidunt sed, finibus eu diam. Nullam non sollicitudin massa. Vivamus
+      semper varius neque, sed varius libero aliquet auctor. Phasellus molestie,
+      nunc ac blandit tincidunt, diam nulla elementum eros, at aliquam nisl
+      lacus mattis orci. Quisque quis efficitur mauris. Curabitur vel elit et
+      justo pellentesque tincidunt eget quis lectus. Sed eu justo posuere est
+      venenatis fringilla at at urna. Etiam in placerat lectus. Suspendisse
+      potenti. Aliquam pretium, lacus nec tristique auctor, neque nibh volutpat
+      elit, faucibus gravida augue lorem eu mauris.
+    </p>
+    <code>
+      example5;
+    </code>
+    <ul>
+      <li>Quisque a augue vel ipsum viverra convallis vitae vitae ligula.</li>
+      <li>
+        Donec hendrerit nunc a mauris faucibus, lacinia suscipit tortor iaculis.
+      </li>
+    </ul>
+    <p>
+      Aliquam mattis enim at urna dictum, vitae molestie quam efficitur. Morbi
+      scelerisque convallis dapibus. Fusce volutpat, mi at mattis faucibus, dui
+      nisi condimentum neque, ut mollis tellus dui id leo. Suspendisse nec justo
+      metus. Sed vulputate mi quam, vel feugiat magna luctus in. Nunc sodales
+      ornare lacus non maximus. Pellentesque semper ipsum in dictum gravida.
+    </p>
+  </section>
 </main>
