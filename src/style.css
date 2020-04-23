@@ -10,20 +10,36 @@ html {
 
 :root {
   --nav-width: 300px;
+  --document-padding: 25px;
+}
+
+body {
+  margin: 0 var(--document-padding);
 }
 
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
+  left: var(--document-padding);
   width: var(--nav-width);
   display: flex;
   flex-direction: column;
-  padding-left: 25px;
 }
 
 .main {
-  margin-left: calc(var(--nav-width) + 25px);
+  margin-left: calc(var(--nav-width) + var(--document-padding));
+}
+
+.main-section {
+  /* placeholder */
+  margin: 0;
+}
+
+code {
+  display: block;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 @media (max-width: 800px) {
