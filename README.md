@@ -8,6 +8,8 @@ A simple responsive page with technical documentation on how to host static webs
 
 ## Demonstrated concepts
 
+**Main languages:** HTML, CSS
+
 - Responsiveness with flex box and media query
 - CSS variables
 - Accessibility, including semantic markup with [currently advisable WAI-ARIA roles and labeling](https://www.w3.org/WAI/tutorials/page-structure/regions/#accessupport)

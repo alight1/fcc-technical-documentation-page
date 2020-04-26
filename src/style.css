@@ -9,25 +9,50 @@ html {
 }
 
 :root {
-  --nav-width: 300px;
-  --document-padding: 25px;
+  /* Color */
+  --navbar-background-color: rgb(245, 245, 245);
+
+  /* Size */
+  --nav-width: 360px;
+  --content-box-padding: 10px;
 }
 
 body {
-  margin: 0 var(--document-padding);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar {
   position: fixed;
   top: 0;
-  left: var(--document-padding);
+  left: 0;
   width: var(--nav-width);
   display: flex;
   flex-direction: column;
+  background-color: var(--navbar-background-color);
+  height: 100%;
+}
+
+.navbar header {
+  padding: var(--content-box-padding);
+}
+
+.nav-link {
+  padding: var(--content-box-padding);
+  color: black;
+  text-decoration: unset;
+}
+
+.navbar .nav-link:first-of-type {
+  border-top: 1px solid;
+}
+
+.navbar .nav-link {
+  border-bottom: 1px solid;
 }
 
 .main {
-  margin-left: calc(var(--nav-width) + var(--document-padding));
+  padding-top: var(--content-box-padding);
+  margin-left: calc(var(--nav-width) + var(--content-box-padding));
 }
 
 .main-section {
@@ -50,6 +75,7 @@ code {
   .navbar {
     position: static;
     margin-bottom: 25px;
+    height: initial;
   }
 
   .main {
