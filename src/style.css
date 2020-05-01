@@ -61,10 +61,15 @@ body {
 }
 
 code {
-  display: block;
+  padding: 0 10px;
   background-color: lightgrey;
-  padding: 10px;
   border-radius: 5px;
+}
+
+code.code-block {
+  display: block;
+  padding: 10px;
+  overflow: auto;
 }
 
 @media (max-width: 800px) {

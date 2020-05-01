@@ -3,6 +3,7 @@
     <h1>Webpack Publish to AWS S3 Host Walkthrough</h1>
   </header>
   <a href="#introduction" class="nav-link">Introduction</a>
+  <a href="#prerequisites" class="nav-link">Prerequisites</a>
   <a href="#get_your_domain" class="nav-link">Get your domain</a>
   <a href="#request_a_free_tls_certificate_via_acm" class="nav-link"
     >Request a free TLS certificate via ACM</a
@@ -26,31 +27,100 @@
   >
     <header id="section-header-introduction"><h2>Introduction</h2></header>
     <p>
-      What should this document? After all, there are plenty of low-cost
-      documentation services online (<a
+      Why does this technical document exist? After all, there are plenty of
+      low-cost and robust documentation services online (e.g.,
+      <a
         href="https://www.atlassian.com/blog/add-ons/5-real-life-examples-beautiful-technical-documentation"
         target="_blank"
-        >Atlassian makes it easy</a
+        >Atlassian</a
       >) and there are surely better ways to spend time coding.
     </p>
     <p>
-      This is a project to demonstrate my knowledge of responsive HTML and CSS
-      ;-). I plan to document how I use AWS S3 to host my static websites at a
-      very low cost (much lower than Webflow site plans) while having more
-      control than most free hosting services offer.
+      Well, this is a project to demonstrate my knowledge of responsive HTML and
+      CSS ;-). In the process, I'll also demonstrate:
     </p>
-    <p>
-      Of course, <a href="https://webflow.com/" target="_blank">Webflow</a> and
-      similar paid services offer far more value than simple website hosting, so
-      the costs are justified for many companies. For simple code portfolio
-      projects, AWS S3 + CloudFront + Certificate Manager provide an excellent
-      alternative for those who know how to code, while Webpack and open-source
-      plugins automate publishing.
-    </p>
-    <p>
-      <strong>Note:</strong> most teams of any size would benefit from a robust
-      CI/CD workflow. This is not that.
-    </p>
+    <ol>
+      <li>
+        How to host simple static websites using AWS S3, CloudFront, Route 53,
+        and Certificate Manager at a very low cost while having more control
+        than most free hosting services offer.
+      </li>
+      <li>
+        How to automatically publish to AWS S3 using Webpack with open-source
+        plugins.
+      </li>
+    </ol>
+
+    <h3>Notes</h3>
+    <ul>
+      <li>
+        Most teams of any size would benefit from a robust CI/CD workflow. This
+        is not that.
+      </li>
+      <li>
+        You can complete all actions through the AWS control panel online, but
+        this documentation focuses on using the AWS CLI.
+      </li>
+    </ul>
+  </section>
+
+  <section
+    id="prerequisites"
+    class="main-section"
+    role="region"
+    aria-labelledby="section-header-prerequisites"
+  >
+    <header id="section-header-prerequisites"><h2>Prerequisites</h2></header>
+    <ol>
+      <li>
+        Familiarity with the
+        <a
+          href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html"
+          target="_blank"
+          >AWS CLI</a
+        >
+      </li>
+      <li>
+        An OS that can
+        <a
+          href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html"
+          target="_blank"
+          >install the AWS CLI</a
+        >
+        and run bash commands (macOS, Linux,
+        <a
+          href="https://docs.microsoft.com/en-us/windows/wsl/about"
+          target="_blank"
+          >Windows 10 with WSL</a
+        >, official AWS CLI Docker image).
+        <ul>
+          <li>
+            <a
+              href="https://raw.githubusercontent.com/lightmotive/fcc-technical-documentation-page/master/src/shell-scripts/configure-aws-cli-v2-linux.sh"
+              target="_blank"
+              >Example Linux installation script</a
+            >
+            that you can run with
+            <code
+              >wget -O -
+              https://raw.githubusercontent.com/lightmotive/fcc-technical-documentation-page/master/src/shell-scripts/configure-aws-cli-v2-linux.sh
+              | sudo bash</code
+            >.
+            <ul>
+              <li>
+                When you're ready, you can
+                <a
+                  href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html#cli-quick-configuration"
+                  target="_blank"
+                  >quickly configure the AWS CLI</a
+                >
+                with <code>aws configure</code>.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ol>
   </section>
 
   <section
